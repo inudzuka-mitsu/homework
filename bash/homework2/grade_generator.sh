@@ -24,7 +24,14 @@ then
    grade="F"
 
 else
-   echo "Invalid mark"
+   grade=""
+
 fi
 
-echo "Your grade is $grade"
+if [ -z "$grade" ]
+then
+   echo "Invalid mark"
+else
+   echo "Your grade is $grade"
+fi
+
